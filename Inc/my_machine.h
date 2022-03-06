@@ -32,6 +32,7 @@
 //#define BOARD_BTT_SKR_PRO_1_1 // F407 based 3D Printer board
 //#define BOARD_BTT_SKR_PRO_1_2 // F407 based 3D Printer board
 //#define BOARD_BTT_SKR_20      // F407 based 3D Printer board
+//#define BOARD_BTT_SKR_20_DAC  // F407 based 3D Printer board, uses analog output (DAC) for spindle speed control
 //#define BOARD_MY_MACHINE      // Add my_machine_map.h before enabling this!
 
 // WARNING: BOARD_BTT_SKR_20 may fry your Trinamic drivers due to bad hardware design.
@@ -51,6 +52,7 @@
 #if !IS_NUCLEO_DEVKIT // The Nucleo boards has an off-chip UART to USB interface.
 #define USB_SERIAL_CDC       1 // Serial communication via native USB.
 #endif
+//#define SAFETY_DOOR_ENABLE   1 // Enable safety door input.
 //#define BLUETOOTH_ENABLE     1 // Set to 1 for HC-05 module. Requires and claims one auxillary input pin.
 //#define VFD_ENABLE           1 // Set to 1 or 2 for Huanyang VFD spindle. More here https://github.com/grblHAL/Plugins_spindle
 //#define DUAL_SPINDLE 		   1 // Uncomment for switching between VFD spindle and PWM output with $32
@@ -84,4 +86,3 @@
 //#define Y_GANGED_LIM_MAX    1
 //#define Z_GANGED_LIM_MAX    1
 //
-
