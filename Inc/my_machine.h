@@ -33,6 +33,7 @@
 //#define BOARD_BTT_SKR_PRO_1_2 // F407 based 3D Printer board
 //#define BOARD_BTT_SKR_20      // F407 based 3D Printer board
 //#define BOARD_BTT_SKR_20_DAC  // F407 based 3D Printer board, uses analog output (DAC) for spindle speed control
+//#define BOARD_FYSETC_S6      // F446 based 3D Printer board
 //#define BOARD_MY_MACHINE      // Add my_machine_map.h before enabling this!
 
 // WARNING: BOARD_BTT_SKR_20 may fry your Trinamic drivers due to bad hardware design.
@@ -55,7 +56,6 @@
 //#define SAFETY_DOOR_ENABLE   1 // Enable safety door input.
 //#define BLUETOOTH_ENABLE     1 // Set to 1 for HC-05 module. Requires and claims one auxillary input pin.
 //#define VFD_ENABLE           1 // Set to 1 or 2 for Huanyang VFD spindle. More here https://github.com/grblHAL/Plugins_spindle
-//#define DUAL_SPINDLE 		   1 // Uncomment for switching between VFD spindle and PWM output with $32
 //#define MODBUS_ENABLE        1 // Set to 1 for auto direction, 2 for direction signal on auxillary output pin.
 //#define SDCARD_ENABLE        2 // Run gcode programs from SD card.
 //#define MPG_ENABLE           1 // Enable MPG interface. Requires serial port and one handshake pin.
